@@ -73,21 +73,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
 
     if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-            if (navLinks.style.display === 'flex') {
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '100%';
-                navLinks.style.left = '0';
-                navLinks.style.width = '100%';
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.background = 'white';
-                navLinks.style.padding = '2rem';
-                navLinks.style.textAlign = 'center';
-                navLinks.style.boxShadow = '0 10px 10px rgba(0,0,0,0.1)';
+        menuToggle.onclick = (e) => {
+            e.stopPropagation();
+            const isVisible = navLinks.classList.contains('mobile-active');
+            if (isVisible) {
+                navLinks.classList.remove('mobile-active');
+            } else {
+                navLinks.classList.add('mobile-active');
             }
-        });
+        };
     }
+
+    // Close menu on scroll or click outside
+    window.addEventListener('scroll', () => {
+        if (navLinks.classList.contains('mobile-active')) {
+            navLinks.classList.remove('mobile-active');
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+            navLinks.classList.remove('mobile-active');
+        }
+    });
 
     // Theme Toggle Logic
     const themeToggle = document.getElementById('theme-toggle');
@@ -97,9 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         body.classList.add(savedTheme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        body.classList.add('dark-theme');
     }
+    // Removed auto-dark mode detection to make light mode default
 
     if (themeToggle) {
         themeToggle.addEventListener('click', () => {
@@ -145,13 +152,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Form submission handling (Prevent default for demo)
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! This is a demo portfolio, so no email was actually sent.');
-            contactForm.reset();
-        });
-    }
+    // Form submission logic removed as contact form was removed.
 });

@@ -929,14 +929,18 @@ body.dark-theme .moon-icon {
 
 /* Contact Section */
 .contact-container {
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
     background: var(--white);
     padding: 4rem;
     border-radius: 24px;
     box-shadow: var(--shadow);
     border: 1px solid var(--card-border);
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
 }
 
 .contact-info h3 {
@@ -953,12 +957,14 @@ body.dark-theme .moon-icon {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    align-items: center;
 }
 
 .method {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    justify-content: center;
 }
 
 .method i {
@@ -1096,10 +1102,31 @@ footer .container {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: var(--white);
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid var(--primary);
+        z-index: 100;
+    }
+
+    .nav-links.mobile-active {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+        padding: 1rem 0;
     }
 
     .menu-toggle {
         display: block;
+        color: var(--text-main);
     }
 
     .hero h1 {
