@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Ready Data Analyst | Aditi Latane | SQL • Python • Power BI</title>
+    <meta name="description"
+        content="Professional portfolio of Aditi Latane, an AI-Ready Data Analyst specializing in SQL, Python, Power BI, and turning raw data into actionable insights.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">AI-Ready Data Analyst<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-extra">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+                    <i data-lucide="moon" class="moon-icon"></i>
+                    <i data-lucide="sun" class="sun-icon"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="reveal">Aditi Latane</h1>
+                <h3 class="reveal">AI-Ready Data Analyst | SQL • Python • Power BI • Excel</h3>
+                <p class="reveal">I analyze data to uncover insights that drive smarter business decisions.</p>
+                <div class="hero-btns reveal">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://drive.google.com/file/d/1e_bTAFHgtKmVdJ34rnYSoDpqjylK9g4Z/view?usp=drive_link"
+                        target="_blank" class="btn btn-secondary">Download Resume <i data-lucide="download"></i></a>
+                </div>
+                <div class="social-links reveal">
+                    <a href="https://github.com/AditiLatane" target="_blank" title="GitHub"><i
+                            data-lucide="github"></i></a>
+                    <a href="https://www.linkedin.com/in/aditi-latane-763b52297/" target="_blank" title="LinkedIn"><i
+                            data-lucide="linkedin"></i></a>
+                    <a href="#contact" id="hero-email-link" title="Email"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="profile-wrapper">
+                    <img src="assets/profile.jpg" alt="Aditi Latane" class="profile-img">
+                    <div class="data-blob"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="reveal">About Me</h2>
+                <div class="underline reveal"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I am an <strong>AI-Ready Data Analyst</strong> with hands-on experience in analyzing and
+                        visualizing
+                        datasets to uncover actionable insights. I specialize in turning complex data into clear,
+                        data-driven decisions that support business growth.
+                    </p>
+                    <ul class="about-bullets">
+                        <li><strong>Internships:</strong> Practical experience as a Data Science and Data Analyst intern
+                            across 4 organizations.</li>
+                        <li><strong>Analytical Tools:</strong> Strong working knowledge of <strong>SQL</strong> for
+                            extraction, <strong>Python</strong> for processing, and <strong>Power BI</strong> for
+                            dashboarding.</li>
+                        <li><strong>KPI Focused:</strong> Skilled in identifying trends, patterns, and key performance
+                            indicators to improve operational efficiency.</li>
+                    </ul>
+                    <p>
+                        I bring a problem-solving mindset and a commitment to continuous learning to drive measurable
+                        business impact through analytics.
+                    </p>
+                </div>
+                <div class="about-highlights reveal">
+                    <div class="highlight-item">
+                        <i data-lucide="briefcase"></i>
+                        <div>
+                            <h4>Internship</h4>
+                            <p>Main Flow | Unified Mentors | CodTech</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i data-lucide="graduation-cap"></i>
+                        <div>
+                            <h4>Specialization</h4>
+                            <p>Data Analytics & Visualization</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i data-lucide="award"></i>
+                        <div>
+                            <h4>Certifications</h4>
+                            <p>NPTEL | IBM | SQL | Python</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="reveal">Technical Skills</h2>
+                <div class="underline reveal"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Data Analysis -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i data-lucide="pie-chart"></i></div>
+                    <h3>Data Analysis</h3>
+                    <ul>
+                        <li>SQL (Joins, Subqueries, Window Functions)</li>
+                        <li>Excel (Pivot Tables, VLOOKUP/XLOOKUP)</li>
+                        <li>Python (Pandas, NumPy)</li>
+                    </ul>
+                </div>
+                <!-- Data Visualization -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i data-lucide="trending-up"></i></div>
+                    <h3>Data Visualization</h3>
+                    <ul>
+                        <li>Power BI</li>
+                        <li>Matplotlib / Seaborn</li>
+                        <li>Dashboard Design & Reporting</li>
+                    </ul>
+                </div>
+                <!-- Databases -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i data-lucide="database"></i></div>
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQL Server</li>
+                        <li>Data Modeling</li>
+                    </ul>
+                </div>
+                <!-- Core Concepts -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i data-lucide="layers"></i></div>
+                    <h3>Core Concepts</h3>
+                    <ul>
+                        <li>Data Cleaning & EDA</li>
+                        <li>KPI Analysis</li>
+                        <li>Basic Statistics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="reveal">Featured Projects</h2>
+                <div class="underline reveal"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="assets/churn.png" alt="Customer Churn Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3>Customer Churn Analysis and Prediction (IBM Dataset)</h3>
+                        <p class="problem"><strong>Problem:</strong> Analyze customer behavior to identify key factors
+                            leading to churn and build a predictive model to estimate churn probability.</p>
+                        <p class="dataset"><strong>Dataset:</strong> IBM Telco Customer Churn dataset containing
+                            demographics, service usage, and billing info.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-Learn</span>
+                            <span>Matplotlib</span>
+                            <span>Seaborn</span>
+                        </div>
+                        <ul class="key-insights">
+                            <li>Month-to-month contracts have the highest churn rate.</li>
+                            <li>Higher monthly charges increase churn probability.</li>
+                            <li>Long-term contracts and bundled services reduce churn.</li>
+                            <li>Important churn-driving features identified through EDA.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/AditiLatane/customer-churn-analysis-and-prediction-IBM"
+                                target="_blank" class="btn-sm"><i data-lucide="github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="assets/ecommerce.png" alt="E-commerce Sales Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Sales Analysis Dashboard (Excel)</h3>
+                        <p class="problem"><strong>Problem:</strong> Analyze e-commerce sales data to uncover trends,
+                            top-performing products, and revenue drivers using an interactive Excel dashboard.</p>
+                        <p class="dataset"><strong>Dataset:</strong> E-commerce sales dataset including order details,
+                            categories, revenue, and regions.</p>
+                        <div class="project-tags">
+                            <span>Excel</span>
+                            <span>Pivot Tables</span>
+                            <span>VLOOKUP/XLOOKUP</span>
+                            <span>Dashboards</span>
+                        </div>
+                        <ul class="key-insights">
+                            <li>Top-selling products and categories identified by revenue.</li>
+                            <li>Clear seasonal sales trends observed.</li>
+                            <li>Certain regions consistently outperform others.</li>
+                            <li>Dashboard enables quick performance monitoring.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/AditiLatane/ecommerce-sales-excel-dashboard" target="_blank"
+                                class="btn-sm"><i data-lucide="github"></i> GitHub</a>
+                            <span class="btn-sm"><i data-lucide="layout"></i> Excel Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="assets/eda.png" alt="Vendor Performance Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3>Vendor Performance Analysis</h3>
+                        <p class="problem"><strong>Problem:</strong> Evaluate vendor performance to identify reliable
+                            vendors, cost inefficiencies, and operational improvement opportunities.</p>
+                        <p class="dataset"><strong>Dataset:</strong> Vendor transactions including delivery timelines,
+                            quantities, defect rates, and costs.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <ul class="key-insights">
+                            <li>High-performing vendors identified based on delivery and quality.</li>
+                            <li>Vendors with higher defect rates highlighted.</li>
+                            <li>Cost vs performance comparison revealed optimization scope.</li>
+                            <li>Data-driven vendor selection recommendations provided.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/AditiLatane/vendor-performance-analysis" target="_blank"
+                                class="btn-sm"><i data-lucide="github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="assets/retail.png" alt="Retail Sales Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3>Retail Sales Analysis using SQL</h3>
+                        <p class="problem"><strong>Problem:</strong> Analyze retail sales data using SQL to derive
+                            insights on revenue, customer behavior, and product performance.</p>
+                        <p class="dataset"><strong>Dataset:</strong> Retail sales database with transaction records,
+                            customers, and product categories.</p>
+                        <div class="project-tags">
+                            <span>SQL</span>
+                            <span>MySQL</span>
+                            <span>Joins</span>
+                            <span>Window Functions</span>
+                        </div>
+                        <ul class="key-insights">
+                            <li>Top-performing products and categories identified.</li>
+                            <li>Revenue trends analyzed across time periods.</li>
+                            <li>Customer purchasing patterns extracted using SQL.</li>
+                            <li>Optimized queries used for efficient analysis.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/AditiLatane/retail-sales-analysis-SQL" target="_blank"
+                                class="btn-sm"><i data-lucide="github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="reveal">Experience</h2>
+                <div class="underline reveal"></div>
+            </div>
+            <div class="timeline">
+                <!-- Role 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analyst Intern</h3>
+                            <span class="date"><i data-lucide="calendar"></i> 15 July 2025 – 15 Oct 2025</span>
+                        </div>
+                        <div class="company-info">
+                            <h4>Unified Mentors</h4>
+                            <span class="industry"><i data-lucide="briefcase"></i> IT / Computers – Software</span>
+                        </div>
+                        <div class="exp-skills">
+                            <span>Exploratory Data Analysis (EDA)</span>
+                            <span>Predictive Modeling</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <ul>
+                            <li>Performed EDA to uncover trends, patterns, and anomalies in complex datasets.</li>
+                            <li>Developed predictive models to extract actionable data-driven insights.</li>
+                            <li>Interpreted model results and communicated findings clearly to stakeholders.</li>
+                            <li>Supported data-backed recommendations for business process improvement.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Science Intern</h3>
+                            <span class="date"><i data-lucide="calendar"></i> 30 June 2025 – 30 July 2025</span>
+                        </div>
+                        <div class="company-info">
+                            <h4>CodTech IT Solutions</h4>
+                            <span class="industry"><i data-lucide="briefcase"></i> IT / Computers – Software</span>
+                        </div>
+                        <div class="exp-skills">
+                            <span>Data Pipeline Development</span>
+                            <span>Optimization Models</span>
+                            <span>Data Consistency</span>
+                        </div>
+                        <ul>
+                            <li>Built and optimized data pipelines for efficient and automated data processing.</li>
+                            <li>Worked on optimization models to significantly improve system performance.</li>
+                            <li>Ensured data consistency and reliability across various internal workflows.</li>
+                            <li>Applied analytical thinking to streamline and improve processing efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analyst Intern</h3>
+                            <span class="date"><i data-lucide="calendar"></i> 01 Jan 2025 – 31 Jan 2025</span>
+                        </div>
+                        <div class="company-info">
+                            <h4>Skillcraft</h4>
+                            <span class="industry"><i data-lucide="briefcase"></i> IT / Computers – Software</span>
+                        </div>
+                        <div class="exp-skills">
+                            <span>Data Visualization</span>
+                            <span>Python</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <ul>
+                            <li>Performed end-to-end data cleaning and analysis using Python libraries (Pandas, NumPy).
+                            </li>
+                            <li>Created compelling visualizations to identify key market trends and patterns.</li>
+                            <li>Translated raw data into meaningful insights to support executive decision-making.</li>
+                            <li>Improved dataset clarity and usability through rigorous structured analysis.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Science Intern</h3>
+                            <span class="date"><i data-lucide="calendar"></i> 25 Dec 2024 – 25 Jan 2025</span>
+                        </div>
+                        <div class="company-info">
+                            <h4>Main Flow Services and Technologies Pvt. Ltd.</h4>
+                            <span class="industry"><i data-lucide="briefcase"></i> IT / Computers – Software</span>
+                        </div>
+                        <div class="exp-skills">
+                            <span>Data Exploration</span>
+                            <span>Feature Engineering</span>
+                            <span>EDA</span>
+                        </div>
+                        <ul>
+                            <li>Conducted comprehensive exploratory data analysis to understand complex data behavior.
+                            </li>
+                            <li>Applied advanced feature engineering techniques to enhance data quality for modeling.
+                            </li>
+                            <li>Assisted in preparing and refining large-scale datasets for predictive analysis.</li>
+                            <li>Collaborated with senior analysts on data-driven problem-solving and strategizing tasks.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Languages Section -->
+    <section class="certifications section" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="reveal">Certifications & Languages</h2>
+                <div class="underline reveal"></div>
+            </div>
+
+            <!-- Professional Certifications Grid -->
+            <div class="certs-grid">
+                <!-- Cert 1: SQL (Basic) -->
+                <div class="cert-card reveal">
+                    <div class="cert-img">
+                        <img src="assets/cert_sql.png" alt="SQL Basic Certification - HackerRank" loading="lazy">
+                        <div class="cert-overlay">
+                            <a href="https://www.hackerrank.com/certificates/D29138C85285" target="_blank"
+                                class="btn btn-primary btn-sm">View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <span class="org">HackerRank</span>
+                        <h3>SQL (Basic)</h3>
+                        <div class="meta">
+                            <span>Issued: 05 Jan, 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Cert 3: NPTEL Demystifying Networking -->
+                <div class="cert-card reveal">
+                    <div class="cert-img">
+                        <img src="assets/cert_networking.png" alt="Demystifying Networking - NPTEL" loading="lazy">
+                        <div class="cert-overlay">
+                            <a href="assets/cert_networking.png" target="_blank" class="btn btn-primary btn-sm">View
+                                Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <span class="org">NPTEL</span>
+                        <h3>Demystifying Networking</h3>
+                        <div class="meta">
+                            <span>Elite Silver (79%)</span>
+                            <span>Aug 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 4: NPTEL Python -->
+                <div class="cert-card reveal">
+                    <div class="cert-img">
+                        <img src="assets/cert_python_ds.jpg" alt="Python for Data Science - NPTEL" loading="lazy">
+                        <div class="cert-overlay">
+                            <a href="assets/cert_python_ds.jpg" target="_blank" class="btn btn-primary btn-sm">View
+                                Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <span class="org">NPTEL</span>
+                        <h3>Python for Data Science</h3>
+                        <div class="meta">
+                            <span>Elite Silver (79%)</span>
+                            <span>Feb 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 5: IBM Enterprise Data Science -->
+                <div class="cert-card reveal">
+                    <div class="cert-img">
+                        <img src="assets/cert_ibm_enterprise.png" alt="Enterprise Data Science - IBM" loading="lazy">
+                        <div class="cert-overlay">
+                            <a href="https://www.credly.com/go/jXvcKpIA" target="_blank"
+                                class="btn btn-primary btn-sm">View Credential</a>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <span class="org">IBM</span>
+                        <h3>Enterprise Data Science in Practice</h3>
+                        <div class="meta">
+                            <span>25 Jun 2024</span>
+                            <span>Professional Certificate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 6: IBM Machine Learning -->
+                <div class="cert-card reveal">
+                    <div class="cert-img">
+                        <img src="assets/cert_ibm_ml.png" alt="Machine Learning - IBM" loading="lazy">
+                        <div class="cert-overlay">
+                            <a href="https://www.credly.com/go/QUdwUrHB" target="_blank"
+                                class="btn btn-primary btn-sm">View Credential</a>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <span class="org">IBM</span>
+                        <h3>Machine Learning for Data Science Projects</h3>
+                        <div class="meta">
+                            <span>11 Jun 2024</span>
+                            <span>Professional Certificate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 7: GeeksforGeeks MongoDB -->
+                <div class="cert-card reveal">
+                    <div class="cert-img">
+                        <img src="assets/cert_mongodb.png" alt="MongoDB Developer Toolkit - GeeksforGeeks"
+                            loading="lazy">
+                        <div class="cert-overlay">
+                            <a href="assets/cert_mongodb.png" target="_blank" class="btn btn-primary btn-sm">View
+                                Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <span class="org">GeeksforGeeks</span>
+                        <h3>MongoDB Developer’s Toolkit</h3>
+                        <div class="meta">
+                            <span>Verified Certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language Proficiency Section -->
+            <div class="languages-container">
+                <div class="section-header" style="margin-bottom: 2rem;">
+                    <h3 class="reveal" style="font-size: 1.8rem;">Language Proficiency</h3>
+                </div>
+                <div class="lang-grid">
+                    <!-- Japanese -->
+                    <div class="lang-card reveal">
+                        <div class="lang-img">
+                            <img src="assets/cert_jlpt.jpg" alt="Japanese JLPT N4">
+                        </div>
+                        <div class="lang-info">
+                            <h4>Japanese (JLPT N4)</h4>
+                            <p>Score: 119/180</p>
+                            <a href="assets/cert_jlpt.jpg" target="_blank" class="verify-link"><i
+                                    data-lucide="external-link"></i> Verify
+                                Credential</a>
+                        </div>
+                    </div>
+                    <!-- German -->
+                    <div class="lang-card reveal">
+                        <div class="lang-img">
+                            <img src="assets/cert_german.jpg" alt="German Level 1">
+                        </div>
+                        <div class="lang-info">
+                            <h4>German (Level 1)</h4>
+                            <p>Global Dialect (74%)</p>
+                            <a href="assets/cert_german.jpg" target="_blank" class="verify-link"><i
+                                    data-lucide="external-link"></i> View
+                                Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="reveal">Get In Touch</h2>
+                <div class="underline reveal"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info reveal">
+                    <h3>Let's talk about data!</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                        visions.</p>
+                    <div class="contact-methods">
+                        <div class="method" id="contact-email">
+                            <i data-lucide="mail"></i>
+                            <span><a href="mailto:aditiplatane@gmail.com"
+                                    style="color: inherit; text-decoration: none;">aditiplatane@gmail.com</a></span>
+                        </div>
+                        <div class="method">
+                            <i data-lucide="linkedin"></i>
+                            <span><a href="https://www.linkedin.com/in/aditi-latane-763b52297/" target="_blank"
+                                    style="color: inherit; text-decoration: none;">linkedin.com/in/aditi-latane</a></span>
+                        </div>
+                        <div class="method">
+                            <i data-lucide="github"></i>
+                            <span><a href="https://github.com/AditiLatane" target="_blank"
+                                    style="color: inherit; text-decoration: none;">github.com/AditiLatane</a></span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message <i data-lucide="send"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aditi Latane. Built with passion for Data.</p>
+            <div class="footer-social">
+                <a href="https://github.com/AditiLatane" target="_blank"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/aditi-latane-763b52297/" target="_blank"><i
+                        data-lucide="linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
